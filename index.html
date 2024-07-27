@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vespa</title>
+    <script src="./hamburger.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white w-full">
+
+ 
+    <nav class="bg-white flex justify-between px-4 md:px-8 py-2 md:py-4 fixed top-0 w-full md:border-b shadow-sm z-10">
+        <img class="hidden md:block" src="./assets/logo.png" alt="Logo">
+        <ion-icon data-Menu="Menu-Button" class="block md:hidden text-3xl z-10" name="menu" onclick="Menu(this)"></ion-icon>
+        <ul data-nav-options = "navlinks-Container" class="max-md:bg-slate-300 max-md:w-[45vw] md:gap-20 items-center flex max-md:justify-evenly max-md:flex-col max-md:min-h-screen left-0 top-0 max-md:absolute max-md:hidden">
+            </select></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+        <div class="flex gap-3 items-center">
+            <button class="bg-white h-fit  py-1 md:py-2 px-2 md:px-4 rounded-md shadow-md">LOG IN</button>
+            <button class="bg-[#42454A] h-fit py-1 md:py-2 px-2 md:px-4 rounded-md text-gray-200 shadow-md">SIGN UP</button>
+        </div>
+    </nav>  
+
+
+    <main class="flex flex-col md:flex-row w-full mt-0 md:mt-20 pt-10 pl-9 max-md:pl-4 max-md:pr-3">
+        <div class="w-full  ">
+            <h1 class="text-7xl text-[#42454A] font-[350] pt-10">RIDE INTO THE</h1>
+            <h1 class="text-7xl font-bold text-[#42454A]  w-fit"> FUTURE!</h1>
+            <hr class="border-t-4 border-[#42454A] mt-20 w-2/5"/>
+            <h2 class="text-[#42454A] my-12 text-xl">Elegant and streamlined design focused on user experience.</h2>
+            <div class="flex gap-5 md:gap-20 font-['Poppins','serif']">
+                <div class="flex gap-5 items-center">
+                    <div class="bg-[#42454A] py-3 px-5 w-fit ">
+                        <i class="fa-solid fa-arrow-right text-white text-lg"></i>
+                    </div>
+                    <h2 class="text-gray-900 font-bold">Buy Now</h2>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="w-full">
+            <img src="./assets/header image.png" alt="">
+        </div>
+    </main>    
+    <section class="w-full flex flex-row-reverse items-center px-4">
+        <div class="flex px-10 gap-10">
+            <img src="./assets/01.png" alt="01">
+            <div class="flex items-center border h-fit self-center border-[#42454A] rounded-3xl" >
+                <div class="px-6 py-3 border-r border-[#42454A]"><i class="fa-solid fa-greater-than xs fa-rotate-180"></i></div>
+                <div class="px-6 py-3 "><i class="fa-solid fa-greater-than xs"></i></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="flex max-md:flex-col justify-evenly items-center  w-full my-12 max-md:gap-5">
+        <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-10 pt-7 pb-4">
+            <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">100<span class="text-xl ml-3  font-semibold">lbs</span></h1></div>
+            <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Net Weight</h2>
+        </div>
+       
+        <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-10 pt-7 pb-4">
+            <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">50<span class="text-xl ml-3  font-semibold">mph</span></h1></div>
+            <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Top Speed</h2>
+        </div>
+        
+        <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-9 pt-7 pb-4">
+            <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">60<span class="text-xl ml-3  font-semibold">miles</span></h1></div>
+            <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Max Range</h2>
+        </div>
+       
+        <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-12 pt-7 pb-4">
+            <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">100<span class="text-xl ml-3  font-semibold">nm</span></h1></div>
+            <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Max Torques</h2>
+        </div>
+
+        <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-6 pt-7 pb-4">
+            <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">50%<span class="text-xl ml-3  font-semibold">slope</span></h1></div>
+            <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Hill Climbing</h2>
+        </div>
+
+        <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-5 pt-7 pb-4">
+            <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">3<span class="text-3xl font-semibold">x</span></h1></div>
+            <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Hydralic disc Brakes</h2>
+        </div>
+    </section>
+    
+    <section class="font-['Poppins','serif'] grid grid-rows-[1fr_1fr] gap-5 h-[930px] ">
+
+    <section class="font-['Poppins','serif'] px-4 w-full overflow-x-clip">
+        
+        <div class="flex justify-center pl-9 max-md:pl-4 max-md:pr-3 mb-16 h-fit">
+            <div>
+                <h1 class="text-center text-5xl font-semibold mt-14 text-[#42454A]">Gallery</h1>
+                <p class="text-[#42454A] text-lg mt-10">Explore our product gallery and experience the quality of our creations for yourself.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-x-10 w-full">
+            
+            <div class="md:w-1/2 flex flex-col max-md:items-center">
+                <h1 class="text-center text-lg min-[364px]:text-xl leading-3 sm:text-3xl font-semibold my-7 text-[#42454A] border-[#42454A] border-2 rounded-lg sm:px-10 px-5 sm:py-6 py-2 max-md:w-3/4 md:w-4/5">Battery Parts Images</h1>
+                <h1 class="text-center text-lg min-[364px]:text-xl leading-3 sm:text-3xl font-semibold my-7 text-[#42454A] border-[#42454A] border-2 rounded-lg sm:px-10 px-5 sm:py-6 py-2 max-md:w-3/4 md:w-4/5">Spare Parts Images</h1>
+                <h1 class="text-center text-lg min-[364px]:text-xl leading-4 sm:text-3xl font-semibold my-7 text-[#42454A] border-[#42454A] border-2 rounded-lg sm:px-10 px-5 sm:py-6 py-2 max-md:w-3/4 md:w-4/5">Front Parts Images</h1>
+            </div>
+
+            <div class="md:w-1/2">
+                <img class="w-full md:-mt-20" src="./assets/gallery parts.png" alt="Gallery Parts">
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="ont-['Poppins','serif'] w-full">
+
+        <div class="flex justify-center pl-9 max-md:pl-4 max-md:pr-3 mb-16 h-fit">
+            <div>
+                <h1 class="text-center text-5xl font-semibold mt-14 text-[#42454A]">Colors That We Have</h1>
+                <p class="text-[#42454A] text-lg mt-10 font-semibold font-['Montserrat','serif']">Checkout the Most Lovable Colors of our Products Here!</p>
+            </div>
+        </div>
+
+        <div class="w-full ">
+            <img class="w-full " src="./assets/gallery scooter.png" alt="Gallery Scooter">
+        </div>
+        
+
+        <div class="flex flex-col md:flex-row justify-between items-center w-full">
+            <div class="relative">
+                <img src="./assets/color-scooter-1.png">
+            </div>
+            
+            <div class="relative">
+                <img src="./assets/color-scooter-2.png">
+            </div>
+            
+            <div class="relative">
+                <img src="./assets/color-scooter-3.png" alt="Red Color">
+            </div>
+            
+            <div class="relative">
+                <img src="./assets/color-scooter-4.png" alt="Black Color">
+            </div>
+        </div>
+    </section>
+
+    <section class="font-['Poppins','sans-serif'] px-4 bg-[#FAFAFA] py-10 w-full">
+            <div class="flex justify-center pl-9 max-md:pl-4 max-md:pr-3 mb-16 h-fit">
+                <div>
+                    <h1 class="text-center text-5xl font-semibold mt-7 text-[#42454A]">Words of Clients</h1>
+                </div>
+            </div>
+
+    
+            <div class="flex flex-col max-md:gap-5 md:flex-row items-center justify-evenly w-fit md:w-full">
+                <!-- Card-1 -->
+                <div class="flex flex-col border w-fit md:w-1/4 py-6 px-7 shadow-sm hover:shadow-lg hover:scale-110 hover:bg-white transition-all ease-in duration-200">
+                    <img class="w-1/3 self-center" src="https://as1.ftcdn.net/v2/jpg/01/64/65/46/1000_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg" alt="Star">
+    
+                    <p class="text-center py-5 text-[#42454A]">Riding my Vespa has been an absolute joy; it's sleek, reliable, and perfect for city commuting. The smooth handling and stylish design make pleasure.</p>
+    
+                    <div class="flex gap-5 self-center">
+                        <img src="./assets/DeadPool.png">
+    
+                        <div class="flex flex-col text-[#42454A]">
+                            <h2 class="text-sm font-bold">DeadPool</h2>
+                            <h1 class="text-xs">CEO Microsoft</h1>
+                        </div>
+                    </div>
+    
+                    </div>
+    
+                 <!-- Card-2 -->
+                <div class="flex flex-col border w-fit md:w-1/4 py-6 px-7 shadow-sm hover:shadow-lg hover:scale-110 hover:bg-white transition-all ease-in duration-200">
+    
+                   <img class="w-1/3 self-center" src="https://as1.ftcdn.net/v2/jpg/01/64/65/46/1000_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg" alt="Star">
+    
+                    <p class="text-center py-5 text-[#42454A]">Riding my Vespa has been an absolute joy; it's sleek, reliable, and perfect for city commuting. The smooth handling and stylish design make pleasure.</p>
+    
+                    <div class="flex gap-5 self-center">
+                        <img src="./assets/Ambani.png">
+    
+                        <div class="flex flex-col text-[#42454A]">
+                            <h2 class="text-sm font-bold">Ambani</h2>
+                            <h1 class="text-xs">CEO Honda</h1>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <!-- Card-3 -->
+                <div class="flex flex-col border w-fit md:w-1/4 py-6 px-7 shadow-sm hover:shadow-lg hover:scale-110 hover:bg-white transition-all ease-in duration-200">
+    
+                  <img class="w-1/3 self-center" src="https://as1.ftcdn.net/v2/jpg/01/64/65/46/1000_F_164654600_JJ7D1mPKQCu7hi1VyaN765CNxZEwWsef.jpg" alt="Star">
+                
+                   <p class="text-center py-5 text-[#42454A]">Riding my Vespa has been an absolute joy; it's sleek, reliable, and perfect for city commuting. The smooth handling and stylish design make pleasure.</p>
+                
+                   <div class="flex gap-5 self-center">
+                       <img src="./assets/Alexa.png">
+                
+                       <div class="flex flex-col text-[#42454A]">
+                           <h2 class="text-sm font-bold">Alexa Bande</h2>
+                           <h1 class="text-xs">CEO Airtel</h1>
+                       </div>
+                   </div>
+                
+                </div>
+    
+            </div>
+    
+    
+            <div class="flex gap-5 w-fit mx-auto mt-10">
+                <div class="bg-[#FAFAFA] py-3 px-5 w-fit  text-[#42454A] text-lg rounded-full border-2 border-[#42454A] cursor-pointer hover:bg-[#42454A] hover:text-white transition-all ease-in duration-200">
+                    <i class="fa-solid fa-arrow-right  rotate-180"></i>
+                </div>
+    
+                <div class="bg-[#FAFAFA] py-3 px-5 w-fit  text-[#42454A] text-lg rounded-full border-2 border-[#42454A] cursor-pointer hover:bg-[#42454A] hover:text-white transition-all ease-in duration-200">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+    
+            </div>
+    
+    </section>
+        
+    <section class="font-['Poppins','sans-serif'] px-4 w-full">
+    
+        <div class="flex justify-center pl-9 max-md:pl-4 max-md:pr-3 mb-16 h-fit">
+    
+                
+                <div class="flex flex-col items-center">
+                    
+                    <h1 class="self-center max-md:text-center text-3xl md:text-5xl font-semibold mt-14 text-[#42454A] w-fit">Subscribe To Newsletter</h1>
+                    <p class="text-[#42454A] text-lg mt-4 font-semibold font-['Montserrat','serif']">Subscirbe to our Newsletter to get offers in future.</p>
+                    <div class="self-center justify-center items-center flex max-md:flex-col w-full gap-5 mt-10">
+                    <input class="bg-[#FAFAFA] border w-3/4 rounded-lg outline-none px-4 md:px-8 py-3 md:py-5 text-sm md:text-xl text-[#42454A]" type="email" name="email" placeholder="Enter your email">
+                    <button class="w-fit md:w-1/4 px-2 md:px-5 py-2 md:py-5 border rounded-lg bg-[#42454A] text-white text-center text-sm md:text-lg cursor-pointer hover:bg-[#FAFAFA] hover:text-[#42454A] transition-all ease-in duration-200" type="submit">Get Start</button>        
+                </div>   
+            </div> 
+        </div>
+    </section>
+
+
+    <footer class="font-['Poppins','sans-serif'] bg-[#42454A] pt-10 pb-20 relative">
+
+        <div class="flex flex-col max-md:items-start md:flex-row-reverse relative">
+
+            <img class="md:absolute left-0 -bottom-10 sm:w-2/4 md:w-[36%]" src="./assets/footer scooter.png" alt="Footer Scooter">
+
+            <div class="max-md:self-center flex flex-col max-md:items-center md:flex-row justify-evenly md:w-1/2">
+                <ul>
+                    <li class="my-8"><h1 class="max-md:text-center text-xl font-bold text-gray-200">About</h1></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Company</a></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Testimonial</a></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Profile</a></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Product</a></li>
+                </ul>
+
+                <ul>
+                    <li class="my-8"><h1 class="max-md:text-center text-xl font-bold text-gray-200">Resources</h1></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Contact</a></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Application</a></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">FQA Features</a></li>
+                </ul>
+    
+                <ul>
+                    <li class="my-8"><h1 class="max-md:text-center text-xl font-bold text-gray-200">Legals</h1></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Copyright Privacy</a></li>
+                    <li class="my-6 max-md:text-center text-gray-200"><a href="#">Terms & Conditions</a></li>
+                    <li class="mt-11 max-md:text-center flex justify-between">
+                        <i data-facebook="Facebook Logo" class="fa-brands fa-facebook fa-2xl text-white"></i>
+                        <i class="fa-brands fa-square-twitter fa-2xl rounded-full text-white" ></i>
+                        <i class="fa-brands fa-instagram fa-2xl text-white"></i>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <h1 class="mx-auto w-full text-center text-gray-200  absolute bottom-5 max-md:text-sm">&copy; Copyright 2024. All rights reserved.</h1>
+    </footer>    
+</body>
+</html>
+
